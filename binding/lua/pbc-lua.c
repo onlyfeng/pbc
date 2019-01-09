@@ -20,7 +20,7 @@ extern "C" {
 
 
 #ifndef _MSC_VER
-#include <alloca.h>
+#include <stdbool.h>
 #else
 #define alloca _alloca
 #endif
@@ -1076,7 +1076,7 @@ _add_rmessage(lua_State *L) {
 extern "C" {
 #endif
 
-LUA_API int
+int
 luaopen_protobuf_c(lua_State *L) {
 	luaL_Reg reg[] = {
 		{"_env_new" , _env_new },
