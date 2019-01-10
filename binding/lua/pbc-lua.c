@@ -18,10 +18,8 @@ extern "C" {
     #include <malloc.h>
 #endif
 
-
-#ifndef _MSC_VER
 #include <stdbool.h>
-#else
+#ifdef _MSC_VER
 #define alloca _alloca
 #endif
 
